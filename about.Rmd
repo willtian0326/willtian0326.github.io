@@ -1,0 +1,11 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Here's some information about me:
+
+I am a p8105 student.
