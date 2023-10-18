@@ -9,6 +9,7 @@ output:
 # This is Will's awesome website
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
 ## Here's a subsection:
 
 Additional Text....
@@ -17,9 +18,11 @@ Additional Text....
 rnorm(10)
 ```
 
-## Linke to local image:
+## Link to local image:
 
 Here's Brian:
+
+<img src="images/brian.jpeg" style="width:75%">
 
 ![](images/brian.jpeg)
 
@@ -33,4 +36,16 @@ Lets link to useful data science websites:
 Link to page within the site:
 
 * [About Me](about.html)
+
+
+## Tabset: {.tabset}
+
+### By Product:
+
+this is my first tab
+
+### By Region:
+
+this is my second tab
+
 

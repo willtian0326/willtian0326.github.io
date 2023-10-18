@@ -11,4 +11,6 @@ navbar:
       href: http://github.com/willtian0326/
 output:
   html_document:
-    theme: cerulean
+    theme: flatly
+    
+    
