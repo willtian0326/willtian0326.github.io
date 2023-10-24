@@ -48,4 +48,10 @@ this is my first tab
 
 this is my second tab
 
+# Here's a new `plot_ly` section:
 
+[plotly](plotly.html)
+
+# Dashboard:
+
+[flexdashboard](flex_dashboard.html)

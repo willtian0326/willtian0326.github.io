@@ -1,22 +1,17 @@
 ---
-title: "My awesome website"
+title: "Flex Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-# Plotly
-
-Making interactive plots
-
-```{r}
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
-
-Focus on NYC airbnb data:
 
 ```{r}
 data("nyc_airbnb")
@@ -33,7 +28,10 @@ nyc_airbnb =
   )
 ```
 
-Make a scatter plot:
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
 
 ```{r}
 nyc_airbnb |>
@@ -43,24 +41,18 @@ nyc_airbnb |>
     type = "scatter", mode = "markers", alpha = 0.5)
 ```
 
-Make a box plot:
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
-nyc_airbnb |>
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) |>
-  plot_ly(
-    y = ~price, color = ~neighbourhood, type = "box", colors = "viridis"
-  )
+
 ```
 
-Bar plot:
+### Chart C
 
 ```{r}
-nyc_airbnb |>
-  count(neighbourhood) |>
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) |>
-  plot_ly(x = ~neighbourhood, y = ~n, type = "bar", color = ~neighbourhood, colors = "viridis")
-  
+
 ```
 
-  
