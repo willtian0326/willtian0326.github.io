@@ -1,12 +1,12 @@
 ---
-title: "My awesome website"
+title: "Will Tian"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Will's awesome website
+# Welcome to Will's Personal Website!
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 

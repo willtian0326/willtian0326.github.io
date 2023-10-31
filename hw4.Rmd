@@ -1,0 +1,94 @@
+---
+title: "Homework 4"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+data("instacart")
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Bar Chart of Popular Aisles:
+
+```{r}
+instacart |>
+  group_by(aisle) |>
+  summarize(count = n()) |>
+  filter(count >= 10000) |>
+  arrange(desc(count)) |>
+  mutate(aisle = fct_reorder(aisle, desc(count))) |>
+  plot_ly(x = ~aisle, y = ~count, color = ~aisle, type = "bar") |>
+  layout(title = "Popular Aisles")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Scatter Plot of Sales of the 10 Most Popular Departments Throughout The Week:
+
+```{r}
+popular_departments =
+  instacart |>
+  count(department) |>
+  arrange(desc(n)) |>
+  select(department) |>
+  head(10)
+
+instacart |>
+  mutate(
+    order_dow = case_match(
+      order_dow,
+      0 ~ "Sunday",
+      1 ~ "Monday",
+      2 ~ "Tuesday",
+      3 ~ "Wednesday",
+      4 ~ "Thursday",
+      5 ~ "Friday",
+      6 ~ "Saturday"
+    )
+  ) |>
+  mutate(
+    order_dow = factor(order_dow, levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+  ) |>
+  filter(department %in% popular_departments$department) |>
+  count(department, order_dow) |>
+  plot_ly(
+    x = ~order_dow,
+    y = ~n,
+    type = "scatter",
+    mode = "lines+markers",
+    color = ~department,
+    groups = ~department
+  ) |>
+  layout(
+    xaxis = list(title = "Day of the Week"),
+    yaxis = list(title = "Number of Items Sold"),
+    title = "Sales of the 10 Most Popular Departments Throughout The Week")
+```
+
+### Pie Chart of Sales of 10 Most Popular Departments Throughout the Day:
+
+```{r}
+instacart |>
+  filter(department %in% popular_departments$department) |>
+  count(department) |>
+  plot_ly(
+    labels = ~department,
+    values = ~n,
+    type = "pie",
+    textposition = 'inside',
+    textinfo = 'label+percent',
+    marker = list(show_legend = FALSE)
+  )
+```
+

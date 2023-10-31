@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "Homework 4"
+      href: hw4.html
     - text: "Plotly"
       href: plotly.html
     - text: "Dashboard"
