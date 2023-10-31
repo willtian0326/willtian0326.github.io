@@ -3,16 +3,12 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
-      href: about.html
+    - text: "Resume"
+      href: resume.html
     - text: "Homework 4"
       href: hw4.html
-    - text: "Plotly"
-      href: plotly.html
-    - text: "Dashboard"
-      href: flex_dashboard.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<willtian0326@gmail.com>
     - icon: fa-github fa-lg
       href: http://github.com/willtian0326/
 output:

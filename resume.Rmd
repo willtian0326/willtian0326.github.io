@@ -1,0 +1,74 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Education:
+
+- Columbia University Mailman School of Public Health
+  - MS in Biostatistics
+  - 1st Year
+
+- University of California - San Diego
+  - BS in Bioinformatics
+  
+# Research Experience:
+
+- School of Medicine, UC San Diego
+  - Research Assistant, Dr. Feng Lab
+  - January 2022 - December 2022
+    - Analyzed the temporal progression of hepatic cells on a single-cell resolution by single-cell transcriptomics
+    - Performed intrasplenic injection of tumor cells on 48 mice to generate hepatocellular carcinoma model
+    - Injected DNA plasmids into 40 mice to produce a Shp2 gene knockout mouse line
+    - Constructed data analysis on bulk RNA sequencing of wild-type and Shp2 knockout liver sample across 8 months
+    
+- School of Life Science, Tianjin University
+  - Research Assistant, Dr. Ye Lab
+  - July 2020 - January 2021
+    - Conducted exploratory data analysis on MCT-1 amino acid sequence via Python and performed protein secondary
+structure prediction
+    - Utilized cyro-EM to solve the 3D structure of Embigin-MCT-1 complex; researched co-localization of MCT-1 and
+Embigin-MCT-1 complex via confocal microscopy
+    - Drafted research report on structure of human monocarboxylate transporter 1 and its cooperativity with Embigin
+    
+# Project Experience:
+
+- Spike Protein Mutations and Phylogenetic Analysis of SARS-CoV-2 Variants
+  - March 2022 - June 2022
+    - Built a SARS-CoV-2 protein database with 29 protein sequences and integrated Python to conduct data analysis
+    - Utilized BlastX for translated sequence alignment
+    - Led a team of 4 to construct the phylogenetic tree of 100 viral sequences using RaxML with 100 bootstraps
+    - Identified the surface glycoprotein with the highest mutation frequency and presented findings to 40 audiences
+    
+- Epigenomic Differentiation Trajectories of Human Immune Cell Types
+  - January 2022 - April 2022
+    - Integrated public scATAC-seq data on 21,000 human blood cells to build a chromatin landscape
+    - Visualized the human hematopoiesis process within a subpopulation of 18,489 CD34+ cells and dendritic cells
+    - Utilized R Studio to run PCA and UMAP on the 18.489 cells and labeled 9 different cell types
+    - Computed lineage trajectories of the subpopulation and identified two distinct lineages in human hematopoiesis
+    
+# Leadership Experience:
+
+- Operating Chair of Chinese Students and Scholars Association
+  - September 2018 - May 2020
+    - Organized various activities including ski trip and spring festival gala; engaged 500 audiences
+    - Administered activity logistics and improved operational efficiency by 20%; opened social media account
+    - Collaborated with other on-campus organizations to host basketball games across 8 teams
+    - Outreached to 50 alumni and hosted a career mentorship webinar; achieved 100% satisfaction rate
+
+# Skills and Interests:
+
+- Language:
+  - Native in Mandarin
+  - Fluent in English
+- Technical:
+  - Proficient in Python, Java, and R
+  - Intermediate in C++
+- Interests:
+  - Traveling
+  - Running
+  - Skiing
+  - Tennis

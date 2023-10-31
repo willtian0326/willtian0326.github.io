@@ -1,42 +1,27 @@
 ---
-title: "Will Tian"
+title: "Will's Website"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# Welcome to Will's Personal Website!
+# Hi there! This is me!
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+![](images/will.jpg)
 
-## Here's a subsection:
 
-Additional Text....
+# And this is my shiba-inu, Brian!
 
-```{r}
-rnorm(10)
-```
+![](images/brian.jpg)
 
-## Link to local image:
+# About:
 
-Here's Brian:
-
-<img src="images/brian.jpeg" style="width:75%">
-
-![](images/brian.jpeg)
-
-## Links to other websites:
-
-Lets link to useful data science websites:
-
-* [Google](https://www.google.com/)
-* [P8105](https://p8105.com/)
-
-Link to page within the site:
-
-* [About Me](about.html)
-
+Hi there! My name is Will Tian. I recently graduated with a BS in Bioinformatics from UC San Diego and am now in my first semester in the MS in Biostatistics program at Columbia University Mailman School of Public Health. Since both of my
+parents work as medical doctors, I grew up with the goal of entering the healthcare industry. But at the
+end of high school, I found my passion in computer science and programming. Luckily, thanks to
+bioinformatics and biostatistics, I had the option to contribute to medicine and biomedical research by pursuing my
+passion.
 
 ## Tabset: {.tabset}
 
@@ -48,10 +33,4 @@ this is my first tab
 
 this is my second tab
 
-# Here's a new `plot_ly` section:
 
-[plotly](plotly.html)
-
-# Dashboard:
-
-[flexdashboard](flex_dashboard.html)
