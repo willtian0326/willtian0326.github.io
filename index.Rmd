@@ -6,6 +6,9 @@ output:
     toc_float: true
 ---
 
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+
 # Hi there! This is me!
 
 ![](images/will.jpg)
